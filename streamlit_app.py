@@ -21,7 +21,7 @@ Original file is located at
 import numpy as np
 import pickle
 import streamlit as st
-import pyngrok
+
 
 # yukarıdakileri fonkisyona alalım
 def recommend_movie(movie):
