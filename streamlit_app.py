@@ -8,12 +8,12 @@ Original file is located at
 """
 
 # @title Setup code
-!pip install -q streamlit
+pip install -q streamlit
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%writefile app.py
 
-!pip install pyngrok
+pip install pyngrok
 
 from google.colab import drive
 drive.mount('/content/drive')
