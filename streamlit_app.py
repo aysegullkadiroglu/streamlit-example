@@ -8,12 +8,12 @@ Original file is located at
 """
 
 # @title Setup code
-pip install streamlit
+# pip install streamlit
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%writefile app.py
 
-pip install pyngrok
+# pip install pyngrok
 
 from google.colab import drive
 drive.mount('/content/drive')
@@ -21,6 +21,7 @@ drive.mount('/content/drive')
 import numpy as np
 import pickle
 import streamlit as st
+import pyngrok
 
 # yukarıdakileri fonkisyona alalım
 def recommend_movie(movie):
