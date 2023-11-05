@@ -35,9 +35,9 @@ def recommend_movie(movie):
   return recommended_movies_name
 
 st.header("Netflix Movie Recommendation System")
-netflix_data_v2 = np.load('drive/MyDrive/netflix_titles.pkl', allow_pickle = True)
+netflix_data_v2 = np.load('netflix_titles.pkl', allow_pickle = True)
 
-similarity = np.load('drive/MyDrive/netflix_titles.pkl', allow_pickle = True)
+similarity = np.load('recommend_movie.pkl', allow_pickle = True)
 
 movie_list = netflix_data_v2['TITLE'].values
 select_movie = st.selectbox(
