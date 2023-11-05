@@ -15,8 +15,8 @@ Original file is located at
 
 # pip install pyngrok
 
-from google.colab import drive
-drive.mount('/content/drive')
+# from google.colab import drive
+# drive.mount('/content/drive')
 
 import numpy as np
 import pickle
