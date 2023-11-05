@@ -8,7 +8,7 @@ Original file is located at
 """
 
 # @title Setup code
-pip install -q streamlit
+pip install streamlit
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%writefile app.py
