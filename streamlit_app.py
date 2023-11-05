@@ -21,7 +21,7 @@ Original file is located at
 import numpy as np
 import pickle
 import streamlit as st
-
+import os
 
 # yukarıdakileri fonkisyona alalım
 def recommend_movie(movie):
@@ -35,9 +35,11 @@ def recommend_movie(movie):
   return recommended_movies_name
 
 st.header("Netflix Movie Recommendation System")
-netflix_data_v2 = np.load('netflix_titles.pkl', allow_pickle = True)
+# Get the full file path to 'netflix_titles.pkl'
+file_path = os.path.abspath('netflix_titles.pkl')
 
-similarity = np.load('recommend_movie.pkl', allow_pickle = True)
+# Load the file using the full path
+netflix_data_v2 = np.load(file_path, allow_pickle=True)
 
 movie_list = netflix_data_v2['TITLE'].values
 select_movie = st.selectbox(
